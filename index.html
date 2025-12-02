@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador Mundial 2026</title>
+<link rel="stylesheet" href="style.css">
+<script src="https://cdn.jsdelivr.net/npm/html2canvas"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Simulador Mundial 2026</h1>
+
+    <div class="botones">
+        <button id="btnManual">Sorteo Manual</button>
+        <button id="btnAuto">Sorteo Automático</button>
+        <button id="btnShare">Compartir Simulación</button>
+    </div>
+
+    <!-- CONTENEDOR DE CARTAS -->
+    <div id="cartasContainer" class="cartas-container"></div>
+
+    <!-- PANEL FINAL PARA CAPTURA -->
+    <div id="resultado" class="resultado">
+        <h2>Resultado del Sorteo</h2>
+        <div id="grupos"></div>
+        <p class="footer">Simulado en simuladordegrupos.com</p>
+    </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
