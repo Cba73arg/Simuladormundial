@@ -1,3 +1,4 @@
+/* Estilos generales */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
@@ -10,6 +11,7 @@ body {
     padding: 20px;
 }
 
+/* Botones */
 button {
     padding: 12px 18px;
     margin: 5px;
@@ -19,6 +21,22 @@ button {
     border-radius: 10px;
 }
 
+/* Pantalla dividida */
+.pantalla {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+/* Paneles izquierda y derecha */
+.panel {
+    background: #222;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+}
+
+/* Cartas del sorteo */
 .cartas-container {
     display: flex;
     justify-content: center;
@@ -27,8 +45,8 @@ button {
 }
 
 .carta {
-    width: 120px;
-    height: 160px;
+    width: 150px;        /* unificado al tamaño mayor */
+    height: 200px;
     background: #333;
     margin: 10px;
     border-radius: 12px;
@@ -37,7 +55,7 @@ button {
     align-items: center;
     font-size: 22px;
     cursor: pointer;
-    transition: transform .3s;
+    transition: transform 0.3s;
 }
 
 .carta:hover {
@@ -49,6 +67,21 @@ button {
     color: #000;
 }
 
+/* Grupos en tiempo real */
+.gruposContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.grupo {
+    background: #333;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Panel final de resultados para captura */
 .resultado {
     margin-top: 40px;
     padding: 20px;
