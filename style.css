@@ -1,0 +1,64 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #111;
+    color: white;
+    text-align: center;
+}
+
+.container {
+    padding: 20px;
+}
+
+button {
+    padding: 12px 18px;
+    margin: 5px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cartas-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.carta {
+    width: 120px;
+    height: 160px;
+    background: #333;
+    margin: 10px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    transition: transform .3s;
+}
+
+.carta:hover {
+    transform: scale(1.07);
+}
+
+.revelada {
+    background: #fff;
+    color: #000;
+}
+
+.resultado {
+    margin-top: 40px;
+    padding: 20px;
+    background: #222;
+    border-radius: 12px;
+    display: none;
+}
+
+.footer {
+    font-size: 12px;
+    margin-top: 20px;
+    opacity: 0.6;
+}
