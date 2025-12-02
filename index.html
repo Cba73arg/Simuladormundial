@@ -9,24 +9,38 @@
 </head>
 
 <body>
-
 <div class="container">
 
     <h1>Simulador Mundial 2026</h1>
 
+    <!-- BOTONES PRINCIPALES -->
     <div class="botones">
         <button id="btnManual">Sorteo Manual</button>
         <button id="btnAuto">Sorteo Automático</button>
         <button id="btnShare">Compartir Simulación</button>
     </div>
 
-    <!-- CONTENEDOR DE CARTAS -->
-    <div id="cartasContainer" class="cartas-container"></div>
+    <!-- PANTALLA DIVIDIDA -->
+    <div class="pantalla">
+        <!-- IZQUIERDA: Sorteo / Cartas -->
+        <div class="panel" id="sorteoPanel">
+            <h2>Sorteo</h2>
+            <div id="cartasContainer" class="cartas-container"></div>
+            <div id="cartaActual" class="carta">?</div>
+            <button id="btnSiguiente">Siguiente del Bombo</button>
+        </div>
+
+        <!-- DERECHA: Grupos -->
+        <div class="panel" id="gruposPanel">
+            <h2>Grupos</h2>
+            <div id="grupos" class="gruposContainer"></div>
+        </div>
+    </div>
 
     <!-- PANEL FINAL PARA CAPTURA -->
     <div id="resultado" class="resultado">
         <h2>Resultado del Sorteo</h2>
-        <div id="grupos"></div>
+        <div id="gruposFinales"></div>
         <p class="footer">Simulado en simuladordegrupos.com</p>
     </div>
 
