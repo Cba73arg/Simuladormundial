@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Sorteo Manual - Bombo 1</title>
+    <link rel="stylesheet" href="estilo.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            display: flex;
+            height: 100vh;
+        }
+        .sorteo {
+            width: 40%;
+            background-color: #f9f9f9;
+            border-right: 2px solid #ccc;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .grupos {
+            width: 60%;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+            overflow-y: auto;
+        }
+        .grupo {
+            background-color: #e0e0e0;
+            padding: 10px;
+            border-radius: 8px;
+        }
+        .grupo h3 {
+            margin-top: 0;
+            text-align: center;
+        }
+        .carta {
+            width: 100px;
+            height: 60px;
+            margin: 10px;
+            background-color: #0066cc;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            border-radius: 8px;
+            font-weight: bold;
+            user-select: none;
+        }
+        .carta.revelada {
+            background-color: #ffcc00;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="sorteo" id="bombo1">
+        <!-- Cartas del Bombo 1 se generarán aquí -->
+    </div>
+
+    <div class="grupos" id="grupos">
+        <div class="grupo" id="grupoA"><h3>Grupo A</h3><ul></ul></div>
+        <div class="grupo" id="grupoB"><h3>Grupo B</h3><ul></ul></div>
+        <div class="grupo" id="grupoC"><h3>Grupo C</h3><ul></ul></div>
+        <div class="grupo" id="grupoD"><h3>Grupo D</h3><ul></ul></div>
+        <div class="grupo" id="grupoE"><h3>Grupo E</h3><ul></ul></div>
+        <div class="grupo" id="grupoF"><h3>Grupo F</h3><ul></ul></div>
+        <div class="grupo" id="grupoG"><h3>Grupo G</h3><ul></ul></div>
+        <div class="grupo" id="grupoH"><h3>Grupo H</h3><ul></ul></div>
+        <div class="grupo" id="grupoI"><h3>Grupo I</h3><ul></ul></div>
+        <div class="grupo" id="grupoJ"><h3>Grupo J</h3><ul></ul></div>
+        <div class="grupo" id="grupoK"><h3>Grupo K</h3><ul></ul></div>
+        <div class="grupo" id="grupoL"><h3>Grupo L</h3><ul></ul></div>
+    </div>
+
+    <script src="manual.js"></script>
+</body>
+</html>
 
